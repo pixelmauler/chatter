@@ -5,6 +5,9 @@ padding: 50px;
 font: .9rem "Lucida Grande", Helvetica, Arial, sans-serif;
 font-weight: 100;
 }
+* {-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 a {
 color: #00B7FF;
 }
@@ -14,22 +17,34 @@ margin-left: auto;
 margin-right: auto;
 }
 #room {
-background-color: #ddd;
-margin-bottom: 1em;
+background-color: #70aaca;
+width: intrinsic;
+margin-bottom: 1.4em;
+padding: 10px 16px;
+
+
 }
 #messages {
 width: 80%;
 height: 450px;
 overflow: auto;
-background-color: #eee;
+background-color: #0c0c0c;
+border-bottom: 1px solid #323232;
+border-top: 1px solid #000000;
+border-left: 1px solid #000000;
+border-right: 1px solid #1f1f1f;
+
+        border-radius: 4px;
 margin-bottom: 1em;
 margin-right: 10px;
+padding: 15px;
 }
 #room-list {
 float: right;
 width: 20%;
 height: 450px;
 overflow: auto;
+padding: 15px;
 }
 #room-list div {
 border-bottom: 1px solid #eee;
@@ -41,7 +56,40 @@ background-color: #ddd;
 width: 80%;
 margin-bottom: 1em;
 margin-right: 1em;
+padding: 5px;
+height: 32px;
 }
 #help {
-font: .7rem "Lucida Grande", Helvetica, Arial, sans-serif;
+font: .8rem "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#send-button{
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+color: white;
+background-color: #151515;
+}
+
+#send-button:hover{
+  background-color: #0c0c0c;
+  -webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
 }
